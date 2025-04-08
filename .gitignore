@@ -1,2 +1,64 @@
 # 가상환경 폴더 제외
 venv/
+
+# 보안 키 제외
+backend/.env
+
+# flutter gitignore
+
+# Python/Backend 관련
+backend/__pycache__/
+backend/**/*.pyc
+backend/**/*.pyo
+backend/**/*.pyd
+backend/.pytest_cache/
+backend/.coverage
+
+# Miscellaneous
+ui/*.class
+ui/*.log
+ui/*.pyc
+ui/*.swp
+.DS_Store
+ui/.atom/
+ui/.buildlog/
+ui/.history
+ui/.svn/
+ui/migrate_working_dir/
+
+# IntelliJ related
+ui/*.iml
+ui/*.ipr
+ui/*.iws
+ui/.idea/
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+ui/**/doc/api/
+ui/**/ios/Flutter/.last_build_id
+ui/.dart_tool/
+ui/.flutter-plugins
+ui/.flutter-plugins-dependencies
+ui/.pub-cache/
+ui/.pub/
+ui/build/
+ui/ios/Pods/
+
+# Symbolication related
+ui/app.*.symbols
+
+# Obfuscation related
+ui/app.*.map.json
+
+# Android Studio will place build artifacts here
+ui/android/app/debug
+ui/android/app/profile
+ui/android/app/release
+
+# OS 관련
+Thumbs.db
