@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
@@ -18,6 +17,7 @@ class _RequestCardScreenState extends State<RequestCardScreen> {
       final jsonData = jsonEncode({'type': 'request', 'message': message});
       // TODO: send jsonData to backend
       print('Sending JSON: \$jsonData');
+      print(jsonData);
       Navigator.pop(context);
     }
   }
