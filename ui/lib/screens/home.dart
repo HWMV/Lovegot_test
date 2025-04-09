@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/bottom_nav_bar.dart';
-import '../widgets/action_card.dart';
-
+// import '../widgets/action_card.dart';
+import '../screens/modals/request_input_modal.dart';
 import 'praise_card_screen.dart';
 import 'request_card_screen.dart';
 
@@ -114,7 +114,18 @@ class HomeScreen extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (_) => const RequestCardScreen()))),
-                  _ActionCard(icon: Icons.timer, label: '타이머'),
+                  _ActionCard(
+                      icon: Icons.timer,
+                      label: '타이머',
+                      onTap: () {
+                        // TODO: Timer 기능 연결
+                      }),
+                  _ActionCard(
+                      icon: Icons.card_giftcard,
+                      label: '요청 카드',
+                      onTap: () {
+                        showRequestInputModal(context);
+                      }),
                 ],
               ),
             ),
