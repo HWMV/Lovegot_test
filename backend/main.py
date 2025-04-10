@@ -36,6 +36,7 @@ def create_statements(request: RequestBody) -> Dict:
     user_input을 받아서 긍정적 화법 3문장을 생성해 반환
     """
     user_input = request.user_input
+    print(f"Received request with user_input: {user_input}")
 
     # agent의 함수 호출
     answer1, answer2, answer3 = generate_positive_statements(user_input)
